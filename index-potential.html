@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Unprofessional Headshots</title>
+    <title>Unprofessional HeadShots</title>
     <meta charset="UTF-8" />
     <meta property="og:image" content="logo.png" />
     <link rel="icon" href="png.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet" />
     <style>
       body {
@@ -48,8 +47,26 @@
       div.right {
         text-align: right;
       }
-      iframe {
-        border: none;
+      .bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        object-fit: cover;
+      }
+
+      /* Overlay Content */
+      .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
       }
     </style>
   </head>
@@ -61,10 +78,10 @@
         <a href="#home" class="w3-bar-item w3-button"><img height="25px" src="logosmbgblack.png" alt="LOGO" /></a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
-          <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-glass-whiskey"></i> ABOUT</a>
+          <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-codepen"></i> ABOUT</a>
           <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>-->
           <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
-          <a href="#order" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> ORDER</a>
+          <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-bar-chart"></i> PROJECTS</a>
           <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
           <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
         </div>
@@ -97,12 +114,12 @@
     <header class="bgimg-1 w3-display-container" id="home">
       <div class="w3-display-left w3-text-white" style="padding: 48px">
         <span class="w3-jumbo w3-hide-small" style="font-family: &quot;Liberation Sans&quot;, sans-serif"
-          >Unprofessional Headshots</span
+          >Unprofessional HeadShots</span
         ><br />
         <span
           class="w3-xxlarge w3-hide-large w3-hide-medium"
           style="font-family: &quot;Liberation Sans&quot;, sans-serif"
-          >Unprofessional Headshots</span
+          >Unprofessional HeadShots</span
         ><br />
         <span class="w3-large">Custom Shot Glasses of Your Head!</span>
         <p>
@@ -134,10 +151,23 @@
       </div>
     </div>
 
-    <!-- Team Section 
-    <div class="w3-container" style="padding: 128px 16px" id="team">
-      <h3 class="w3-center">THE TEAM</h3>
-      <p class="w3-center w3-large">The ones who runs this company</p>
+    <video autoplay muted loop class="bg-video">
+      <source src="Video/hadshotTurntable2.MOV" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay Content 
+    <div class="w3-display-container w3-text-white" style="height: 100vh">
+      <div class="w3-display-middle w3-center">
+        <h1>Welcome</h1>
+        <p>This is a video background</p>
+      </div>
+    </div>-->
+
+    <!-- Team Section -->
+    <div class="w3-container w3-text-white" style="padding: 128px 16px" id="team">
+      <h3 class="w3-center" style="font-weight: bold">THE TEAM</h3>
+      <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
       <div class="w3-row-padding w3-grayscale" style="margin-top: 64px">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-card">
@@ -178,31 +208,7 @@
             </div>
           </div>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width: 100%" />
-            <div class="w3-container">
-              <h3>Dan Star</h3>
-              <p class="w3-opacity">Designer</p>
-              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-              <p>
-                <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div> -->
-
-    <!-- Google Order Form -->
-    <div class="w3-container w3-white" style="padding: 60px 16px" id="order">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSd167pOj12aK8H5866pjdMp432NGbjOZKlFGkUXDNb2GoVf8Q/viewform?embedded=true"
-      width="100%"
-      height="1087"
-      title="Unprofessional Headshots Purchase Form"
-      >Loading…</iframe
-    >
     </div>
 
     <!-- Contact Section -->
@@ -244,7 +250,7 @@
 
         <!--<a href="example" target="_blank"><i class="fa fa-example w3-hover-opacity"></i></a>-->
       </div>
-      <p class="w3-small">Copyright © 2025 Unprofessional Headshots. All rights reserved.</p>
+      <p class="w3-small">Copyright © 2025 Unprofessional HeadShots. All rights reserved.</p>
     </footer>
 
     <script>
