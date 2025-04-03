@@ -209,6 +209,7 @@
       <iframe
         src="https://fsu.qualtrics.com/jfe/form/SV_4VALGpet5qM2g7k"
         width="100%"
+        height="1500"
         title="Unprofessional Headshots Purchase Form2"></iframe>
     </div>
 
@@ -278,45 +279,6 @@
       function w3_close() {
         mySidebar.style.display = "none";
       }
-    </script>
-
-    <!--
-    <script>
-      //  Create dynamic height for iframe form from: Archive/Qualtrics JavaScript Dynamic iframe.txt
-      window.addEventListener(
-        "message",
-        function (event) {
-          if (event.data.qualtricsHeight) {
-            var iframe = document.querySelector("iframe");
-            if (iframe) {
-              iframe.style.height = event.data.qualtricsHeight + "px";
-            }
-          }
-        },
-        false
-      );
-    </script>
-    -->
-    <script>
-      function debounce(func, wait) {
-        let timeout;
-        return function (...args) {
-          clearTimeout(timeout);
-          timeout = setTimeout(() => func.apply(this, args), wait);
-        };
-      }
-
-      function updateIframeHeight(event) {
-        if (event.data.qualtricsHeight) {
-          var iframe = document.querySelector("iframe");
-          if (iframe) {
-            let newHeight = Math.min(event.data.qualtricsHeight, 2000); // Limit to 2000px max
-            iframe.style.height = newHeight + "px";
-          }
-        }
-      }
-
-      window.addEventListener("message", debounce(updateIframeHeight, 200), false);
     </script>
   </body>
 </html>
