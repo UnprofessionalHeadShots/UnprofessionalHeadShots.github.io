@@ -48,14 +48,17 @@
         text-align: right;
       }
     </style>
+    <script>
+      if (window.self !== window.top) {
+        window.top.location = window.location.href;
+      }
+    </script>
   </head>
 
   <body>
     <!-- Navbar (sit on top) -->
-    
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    
 
     <!-- Summary Section -->
     <div class="w3-container w3-white" style="padding: 30px 30px 0px" id="summary">
@@ -91,7 +94,6 @@
     </div>
 
     <!-- Footer -->
-    
 
     <script>
       // Modal Image Gallery
