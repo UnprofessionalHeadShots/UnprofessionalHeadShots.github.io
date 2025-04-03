@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link href="https://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet" />
     <style>
       body {
@@ -57,11 +58,33 @@
 
   <body>
     <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button"><img height="25px" src="logosmbgblack.png" alt="LOGO" /></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-glass-whiskey"></i> ABOUT</a>
+          <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>-->
+          <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
+          <a href="#order" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> ORDER</a>
+          <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
+          <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
 
     <!-- Summary Section -->
-    <div class="w3-container w3-white" style="padding: 30px 30px 0px" id="summary">
+    <div class="w3-container w3-white" style="padding: 120px 30px 0px" id="summary">
       <span class="w3-xxlarge w3-hide-small" style="font-family: &quot;Liberation Sans&quot;, sans-serif"
         >Your order has been placed!</span
       ><br />
@@ -94,6 +117,20 @@
     </div>
 
     <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <a href="mailto:unprofessionalheadshots@gmail.com" target="_blank"
+          ><i class="fa fa-envelope w3-hover-opacity"></i
+        ></a>
+        <a href="https://www.instagram.com/unprofessional_headshots/" target="_blank"
+          ><i class="fab fa-instagram w3-hover-opacity"></i
+        ></a>
+
+        <!--<a href="example" target="_blank"><i class="fa fa-example w3-hover-opacity"></i></a>-->
+      </div>
+      <p class="w3-small">Copyright © 2025 Unprofessional Headshots. All rights reserved.</p>
+    </footer>
 
     <script>
       // Modal Image Gallery
