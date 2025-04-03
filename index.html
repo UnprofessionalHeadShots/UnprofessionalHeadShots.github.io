@@ -209,7 +209,6 @@
       <iframe
         src="https://fsu.qualtrics.com/jfe/form/SV_4VALGpet5qM2g7k"
         width="100%"
-        height="1450"
         title="Unprofessional Headshots Purchase Form2"></iframe>
     </div>
 
@@ -279,6 +278,22 @@
       function w3_close() {
         mySidebar.style.display = "none";
       }
+    </script>
+
+    <script>
+      //  Create dynamic height for iframe form from: Archive/Qualtrics JavaScript Dynamic iframe.txt
+      window.addEventListener(
+        "message",
+        function (event) {
+          if (event.data.qualtricsHeight) {
+            var iframe = document.querySelector("iframe");
+            if (iframe) {
+              iframe.style.height = event.data.qualtricsHeight + "px";
+            }
+          }
+        },
+        false
+      );
     </script>
   </body>
 </html>
