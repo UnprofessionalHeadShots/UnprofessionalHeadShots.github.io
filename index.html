@@ -3,8 +3,8 @@
   <head>
     <title>Unprofessional Headshots</title>
     <meta charset="UTF-8" />
-    <meta property="og:image" content="logo.png" />
-    <link rel="icon" href="png.png" />
+    <meta property="og:image" content="LogoBlackBG.png" />
+    <link rel="icon" href="LogoBlackBG.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
@@ -51,6 +51,7 @@
       iframe {
         border: none;
       }
+      .w3-dark-red { background-color: #c00000; }
     </style>
   </head>
 
@@ -58,12 +59,14 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-black w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button"><img height="25px" src="LogoThickWhiteClear.png" alt="LOGO" /></a>
+        <a href="#home" class="w3-bar-item w3-button"
+          ><img height="26px" src="Header%20Logo%20White%20NoBG.png" alt="LOGO"
+        /></a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
           <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-glass-whiskey"></i> ABOUT</a>
           <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>-->
-          <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
+          <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-money-bill-wave"></i> PRICING</a>
           <a href="#order" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> ORDER</a>
           <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
           <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -94,6 +97,7 @@
     </nav>
 
     <!-- Header with full-height image -->
+    <!--
     <header class="bgimg-1 w3-display-container" id="home">
       <div class="w3-display-left w3-text-white" style="padding: 48px">
         <span class="w3-jumbo w3-hide-small" style="font-family: &quot;Liberation Sans&quot;, sans-serif"
@@ -122,6 +126,34 @@
         ></a>
       </div>
     </header>
+    -->
+    <header class="bgimg-1 w3-display-container" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px">
+        <img
+          src="Header%20Logo%20WhiteTrans.png"
+          alt="Unprofessional Headshots Logo"
+          style="max-width: 100%; height: auto" />
+        <br />
+        <!--<span class="w3-large">Custom Shot Glasses of Your Head!</span>-->
+        <!--
+        <p>
+          <a
+            href="#about"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+            >Learn more</a
+          >
+        </p>
+        -->
+      </div>
+      <div class="w3-display-bottomleft w3-text-white w3-large" style="padding: 24px 48px">
+        <a href="mailto:unprofessionalheadshots@gmail.com" target="_blank"
+          ><i class="fa fa-envelope w3-hover-opacity"></i
+        ></a>
+        <a href="https://www.instagram.com/unprofessional_headshots/" target="_blank"
+          ><i class="fab fa-instagram w3-hover-opacity"></i
+        ></a>
+      </div>
+    </header>
 
     <!-- Modal for full size images on click -->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -134,8 +166,9 @@
       </div>
     </div>
 
-    <!-- Team Section 
-    <div class="w3-container" style="padding: 128px 16px" id="team">
+    <!-- Team Section -->
+    <!--
+    <div class="w3-container" style="padding: 128px 16px" id="about">
       <h3 class="w3-center">THE TEAM</h3>
       <p class="w3-center w3-large">The ones who runs this company</p>
       <div class="w3-row-padding w3-grayscale" style="margin-top: 64px">
@@ -192,7 +225,63 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    -->
+    <!-- Pricing -->
+    <div class="w3-container w3-center w3-dark-grey" style="padding: 128px 16px" id="pricing">
+      <h3><b>PRICING</b></h3>
+      <!--<p class="w3-large">Choose a pricing plan that fits your needs.</p>-->
+      <div class="w3-row-padding" style="margin-top: 64px">
+        <div class="w3-half w3-section">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">First Timer</li>
+            <li class="w3-padding-16">High Quality Scan, 3D Printed Shot, with Metal Shot Insert</li>
+            <!--
+            <li class="w3-padding-16">
+              <h2 class="w3-wide">$ 30</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            -->
+            <li class="w3-light-grey w3-padding-24">
+              <h2><button class="w3-button w3-dark-red w3-text-white w3-padding-large">$ 30</button></h2>
+            </li>
+          </ul>
+        </div>
+        <!--
+        <div class="w3-third">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+            <li class="w3-padding-16"><b>25GB</b> Storage</li>
+            <li class="w3-padding-16"><b>25</b> Emails</li>
+            <li class="w3-padding-16"><b>25</b> Domains</li>
+            <li class="w3-padding-16"><b>Endless</b> Support</li>
+            <li class="w3-padding-16">
+              <h2 class="w3-wide">$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        -->
+        <div class="w3-half w3-section">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Want More?</li>
+            <li class="w3-padding-16">After first purchase, price reduces for all future duplicates</li>
+            <!--
+            <li class="w3-padding-16">
+              <h2 class="w3-wide">$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            -->
+            <li class="w3-light-grey w3-padding-24">
+              <h2><button class="w3-button w3-dark-red w3-padding-large w3-text-white">$ 10</button></h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- Google Order Form 
     <div class="w3-container w3-white" style="padding: 60px 16px" id="order">
